@@ -13,10 +13,6 @@ public class WebCamScript : MonoBehaviour
     void Start()
     {
 
-        WebCamDevice[] devices = WebCamTexture.devices;
-        for (int i = 0; i < devices.Length; i++)
-            Debug.Log(devices[i].name);
-
         // Edit 2: if being run on a mobile device, create a camera parent object and set its transform 
         //  'this' (main camera) camera's transform.. Then rotate the parent 90 degrees right
         if (Application.isMobilePlatform)
